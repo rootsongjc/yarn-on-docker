@@ -1,10 +1,11 @@
-#Hadoop Docker Client
+#Yarn On Docker
 
-Build and run an hadoop docker client, pass the config item to hadoop configuration files through docker ENV.
+Build and run an yarn cluster on docker, pass the config item to hadoop configuration files through docker ENV.
 
 ###Build image
 
 ```
+./build.sh
 docker build -t hadoop-yarn:v0.1 .
 ```
 
