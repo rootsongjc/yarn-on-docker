@@ -2,6 +2,30 @@
 
 Build and run an yarn cluster on docker, pass the config item to hadoop configuration files through docker ENV.
 
+###How the image was build and run?
+
+- Step1
+
+  Prepare the direcotries for yarn and chown owner to hadoop.
+
+  Download hadoop-2.6.0-cdh5.5.2.tar.gz and install it in docker image. Unzip it and remove the default hadoop configuration files.
+
+- Step2
+
+  Put the codec lib.so files into the hadoop native directory.
+
+  Put custom hadoop configuration files to hadoop conf directory.
+
+- Step3
+
+  Set the ENV and Entrypoint. 
+
+- Stop4
+
+  Run a container with sepecific ENV passed to it.
+
+
+
 ###Build image
 
 ```
@@ -62,3 +86,9 @@ docker run -d -e NANENODE_IP=172.16.31.63 -e RESOURCEMANAGER_IP=172.16.31.63 -e 
 - RESOURCEMANAGER_IP
 
 - HISTORYSERVER_IP
+
+###About
+
+Author: rootsongjc@gmail.com
+
+*FYI: If you want to create a yarn cluster with multiple nodemanagers, you need a docker plugins to make the docker container on different hosts can be accessed with each others.*
