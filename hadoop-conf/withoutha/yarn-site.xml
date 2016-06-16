@@ -35,7 +35,7 @@
   </property>
   <property>
     <name>yarn.resourcemanager.client.thread-count</name>
-    <value>50</value>
+    <value>100</value>
   </property>
   <property>
     <name>yarn.resourcemanager.scheduler.client.thread-count</name>
@@ -75,7 +75,7 @@
   </property>
   <property>
     <name>yarn.resourcemanager.amliveliness-monitor.interval-ms</name>
-    <value>1000</value>
+    <value>10000</value>
   </property>
   <property>
     <name>yarn.am.liveness-monitor.expiry-interval-ms</name>

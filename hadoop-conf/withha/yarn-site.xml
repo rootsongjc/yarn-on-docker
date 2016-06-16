@@ -175,7 +175,7 @@
   </property>  
   <property> 
     <name>yarn.resourcemanager.nm.liveness-monitor.interval-ms</name>  
-    <value>1000</value> 
+    <value>10000</value> 
   </property>  
   <property> 
     <name>yarn.nm.liveness-monitor.expiry-interval-ms</name>  
@@ -183,7 +183,7 @@
   </property>  
   <property> 
     <name>yarn.resourcemanager.resource-tracker.client.thread-count</name>  
-    <value>50</value> 
+    <value>100</value> 
   </property>  
   <property> 
     <name>yarn.application.classpath</name>  
