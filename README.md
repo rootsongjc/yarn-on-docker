@@ -28,6 +28,8 @@ Build and run an yarn cluster on docker, pass the config item to hadoop configur
 
 ###Build image
 
+Edit Dockerfile and change the base image to your own JDK7 image.
+
 ```
 ./build.sh
 docker build -t hadoop-yarn:v0.1 .
