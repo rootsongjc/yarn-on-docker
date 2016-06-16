@@ -94,4 +94,6 @@ docker run -d -e NANENODE_IP=172.16.31.63 -e RESOURCEMANAGER_IP=172.16.31.63 -e 
 Author: rootsongjc@gmail.com
 
 *FYI: If you want to create a yarn cluster with multiple nodemanagers, you need a docker plugins to make the docker container on different hosts can be accessed with each others.*
-You need a docker ipam plugin to make the continers located on different hosts can be accessed by each others. Try this:https://github.com/rootsongjc/docker-ipam-plugin
+You need a docker ipam plugin to make the continers located on different hosts can be accessed by each others. 
+Try this:https://github.com/rootsongjc/docker-ipam-plugin
+You also need a plugin to listen on docker nodes and register container's IP-hostname into a DNS server so that docker containers can recognise each other by the hostname which is the same with the container ID.
