@@ -30,6 +30,9 @@ sed -i -E "s/NAMENODE_IP/$NAMENODE_IP/g" $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 sed -i -E "s/RESOURCEMANAGER_IP/$RESOURCEMANAGER_IP/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 sed -i -E "s/HISTORYSERVER_IP/$HISTORYSERVER_IP/g" $HADOOP_HOME/etc/hadoop/mapred-site.xml
 fi
+#nodemanager resource limit
+sed -i -E "s/CPU_CORE_NUM/$CPU_CORE_NUM/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
+sed -i -E "s/NODEMANAGER_MEMORY_MB/$NODEMANAGER_MEMORY_MB/g" $HADOOP_HOME/etc/hadoop/yarn-site.xml
 
 #Start yarn resourcemanager
 if [ $srv = "resourcemanager" ]; then

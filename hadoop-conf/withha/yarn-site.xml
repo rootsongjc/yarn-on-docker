@@ -147,7 +147,7 @@
   </property>  
   <property> 
     <name>yarn.nodemanager.resource.memory-mb</name>  
-    <value>8192</value> 
+    <value>NODEMANAGER_MEMORY_MB</value> 
   </property>  
   <property> 
     <name>yarn.scheduler.increment-allocation-vcores</name>  
@@ -227,7 +227,7 @@
   </property>  
   <property> 
     <name>yarn.nodemanager.resource.cpu-vcores</name>  
-    <value>4</value> 
+    <value>CPU_CORE_NUM</value> 
   </property>  
   <property> 
     <name>yarn.nodemanager.remote-app-log-dir</name>  

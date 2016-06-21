@@ -89,6 +89,12 @@ docker run -d -e NANENODE_IP=172.16.31.63 -e RESOURCEMANAGER_IP=172.16.31.63 -e 
 
 - HISTORYSERVER_IP
 
+###NodeManager resource limit
+
+- CPU_CORE_NUM
+
+- NODEMANAGER_MEMORY_MB
+
 ###About
 
 Author: rootsongjc@gmail.com

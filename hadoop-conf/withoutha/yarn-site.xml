@@ -55,11 +55,15 @@
   </property>
   <property>
     <name>yarn.scheduler.maximum-allocation-mb</name>
-    <value>8192</value>
+    <value>20480</value>
   </property>
   <property>
     <name>yarn.nodemanager.resource.cpu-vcores</name>
-    <value>4</value>
+    <value>CPU_CORE_NUM</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+	<value>NODEMANAGER_MEMORY_MB</value>
   </property>
   <property>
     <name>yarn.scheduler.minimum-allocation-vcores</name>
