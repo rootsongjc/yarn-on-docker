@@ -34,8 +34,8 @@ ENV HADOOP_HOME /usr/local/hadoop
 ENV PATH "/usr/local/hadoop/bin:/usr/local/hadoop/sbin:$PATH"
 ENV HADOOP_CONF_DIR $HADOOP_HOME/etc/hadoop
 ENV YARN_CONF_DIR $HADOOP_HOME/etc/hadoop
-ENV CPU_CORE_NUM
-ENV NODEMANAGER_MEMORY_MB
+ENV CPU_CORE_NUM 4
+ENV NODEMANAGER_MEMORY_MB 8192
 RUN echo "export HADOOP_HOME=/usr/local/hadoop">>/etc/profile && \
 echo "export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop">>/etc/profile && \
 echo "export YARN_CONF_DIR=/usr/local/hadoop/etc/hadoop">>/etc/profile && \
