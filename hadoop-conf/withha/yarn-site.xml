@@ -237,4 +237,17 @@
     <name>yarn.resourcemanager.connect.retry-interval.ms</name>  
     <value>1000</value> 
   </property>  
+  <property>
+    <name>yarn.nodemanager.localizer.fetch.thread-count</name>
+    <value>8</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.vmem-pmem-ratio</name>
+    <value>4</value>
+  </property>
+
 </configuration>
