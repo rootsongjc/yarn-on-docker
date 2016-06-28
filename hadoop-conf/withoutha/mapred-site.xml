@@ -115,15 +115,15 @@
   </property>
   <property>
     <name>yarn.app.mapreduce.am.command-opts</name>
-    <value>-Djava.net.preferIPv4Stack=true -Xmx825955249</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx4294967296</value>
   </property>
   <property>
     <name>mapreduce.map.java.opts</name>
-    <value>-Djava.net.preferIPv4Stack=true</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx5368709120</value>
   </property>
   <property>
     <name>mapreduce.reduce.java.opts</name>
-    <value>-Djava.net.preferIPv4Stack=true</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx6442450944</value>
   </property>
   <property>
     <name>yarn.app.mapreduce.am.admin.user.env</name>

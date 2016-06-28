@@ -115,15 +115,15 @@
   </property>
   <property>
     <name>yarn.app.mapreduce.am.command-opts</name>
-    <value>-Djava.net.preferIPv4Stack=true -Xmx825955249</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx4294967296</value>
   </property>
   <property>
     <name>mapreduce.map.java.opts</name>
-    <value>-Djava.net.preferIPv4Stack=true</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx5368709120</value>
   </property>
   <property>
     <name>mapreduce.reduce.java.opts</name>
-    <value>-Djava.net.preferIPv4Stack=true</value>
+    <value>-Djava.net.preferIPv4Stack=true -Xmx6442450944</value>
   </property>
   <property>
     <name>yarn.app.mapreduce.am.admin.user.env</name>
@@ -151,7 +151,7 @@
   </property>
   <property>
     <name>mapreduce.application.classpath</name>
-    <value>/usr/local/hadoop/etc/hadoop,/usr/local/hadoop/share/hadoop/common/*,/usr/local/hadoop/share/hadoop/common/lib/*,/usr/local/hadoop/share/hadoop/hdfs/*,/usr/l    ocal/hadoop/share/hadoop/hdfs/lib/*,/usr/local/hadoop/share/hadoop/mapreduce/*,/usr/local/hadoop/share/hadoop/mapreduce/lib/*,/usr/local/hadoop/share/hadoop/yarn/*,/usr    /local/hadoop/share/hadoop/yarn/lib/*</value>
+    <value>/usr/local/hadoop/etc/hadoop,/usr/local/hadoop/share/hadoop/common/*,/usr/local/hadoop/share/hadoop/common/lib/*,/usr/local/hadoop/share/hadoop/hdfs/*,/usr/local/hadoop/share/hadoop/hdfs/lib/*,/usr/local/hadoop/share/hadoop/mapreduce/*,/usr/local/hadoop/share/hadoop/mapreduce/lib/*,/usr/local/hadoop/share/hadoop/yarn/*,/usr/local/hadoop/share/hadoop/yarn/lib/*</value>
   </property>
   <property>
     <name>mapreduce.admin.user.env</name>
