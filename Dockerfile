@@ -9,6 +9,7 @@ MAINTAINER jingchaosong jingchao.song@tendcloud.com
 
 ADD ./hadoop-2.6.0-cdh5.5.2 /usr/local/hadoop/
 ADD ./hadoop-conf/ /usr/local/hadoop/etc/hadoop/
+ADD jars/spark-1.6.0-yarn-shuffle.jar /usr/local/hadoop/share/hadoop/yarn/
 RUN adduser hadoop && \
 mkdir -p /opt/yarn/nm && \
 mkdir -p /var/log/hadoop-yarn && \
