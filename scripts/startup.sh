@@ -4,6 +4,17 @@
 #Date:2016-06-12
 
 srv=$1
+#Modify ulimits
+echo "* soft nofile 655350" >> /etc/security/limits.conf
+echo "* hard nofile 655350" >> /etc/security/limits.conf
+echo "@hadoop        hard    nproc           655350" >> /etc/security/limits.conf
+echo "@hadoop        soft    nproc           655350" >> /etc/security/limits.conf
+echo "@root        soft    nproc           655350" >> /etc/security/limits.conf
+echo "@root        hard    nproc           655350" >> /etc/security/limits.conf
+echo "ulimit -SH 655350" >> /etc/rc.local
+
+#Export LANG
+echo 'export LANG="en_US.UTF-8"'>>/etc/profile
 #Edit hadoop configuration
 if [ $HA = "yes" ]; then
 echo "With hadoop HA"
